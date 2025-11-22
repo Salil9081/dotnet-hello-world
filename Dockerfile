@@ -15,7 +15,7 @@ RUN dotnet publish -c Release -o /app/out
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.1 AS runtime
 WORKDIR /app
 
-# Important for Codespaces: listen on all interfaces
+# Listen on port 6000
 ENV ASPNETCORE_URLS=http://0.0.0.0:6000
 
 COPY --from=build /app/out .
