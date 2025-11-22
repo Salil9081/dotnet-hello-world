@@ -13,9 +13,10 @@ namespace hello_world_api.Controllers
         [HttpGet]
         public string Get()
         {
-            return "Hello world!!!!!!. this is from UTA";
+            return "Hello world!!!!!!.";
         }
 
     }
 }
+
 
